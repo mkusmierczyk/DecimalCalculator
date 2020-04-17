@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CodersLab</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar shadow-sm p-3 align-items-center">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Coders Lab</h5>
+  <h6 class="my-0">Moduł 4 - Warsztat</h6>
+</nav>
+
+<main class="container mt-4">
+
+  <section>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Kalkulator binarny (8 bitów)</h5>
+        <h6 class="card-subtitle text-muted">Kliknij w bit, by zmienić liczbę</h6>
+      </div>
+
+      <div class="card-body">
+        <form class="binary-calculator">
+
+          <div class="group-number">
+            <label class="display-1 display-number" for="d1">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <label class="display-2 display-number" for="d2">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-1 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+
+          <div class="group-number">
+            <label class="display-3 display-number" for="d3">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-4 display-number" for="d4">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-2 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+
+          <div class="group-number">
+            <label class="display-5 display-number" for="d5">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-6 display-number" for="d6">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-3 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-7 display-number" for="d7">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-8 display-number" for="d8">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-4 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-9 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-10 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-5 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-11 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-12 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-6 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-13 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-14 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-7 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-15 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-16 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-8 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-17 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+
+            <label class="display-18 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </label>
+
+            <span class="result-9 result-bit">
+              <span class="display-number__value--zero active">0</span>
+              <span class="display-number__value--one">1</span>
+            </span>
+          </div>
+
+          <div class="operator-bar">
+            <span> + </span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Kalkulator dziesiętny</h5>
+        <h6 class="card-subtitle text-muted">Kliknij w liczbę, by ją zmienić</h6>
+      </div>
+
+      <div class="card-body">
+
+        <form class="dec-calculator">
+
+          <div class="group-number">
+            <label class="display-1 display-number" for="d1">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <label class="display-2 display-number" for="d2">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-1 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+
+          <div class="group-number">
+            <label class="display-3 display-number" for="d3">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-4 display-number" for="d4">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-2 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+
+          <div class="group-number">
+            <label class="display-5 display-number" for="d5">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-6 display-number" for="d6">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-3 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-7 display-number" for="d7">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-8 display-number" for="d8">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-4 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-9 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-10 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-5 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-11 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-12 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-6 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-13 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-14 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-7 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-15 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-16 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-8 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="group-number">
+            <label class="display-17 display-number" for="d9">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+
+            <label class="display-18 display-number" for="d10">
+              <span class="display-number__value--zero active">0</span>
+            </label>
+
+            <span class="result-9 result-bit">
+              <span class="display-number__value--zero active">0</span>
+            </span>
+          </div>
+
+          <div class="operator-bar">
+            <span> + </span>
+            <div class="tooltip">
+              Aby dodać, kliknij!
+              <div class="chatBubbleArrowBorder"></div>
+              <div class="chatBubbleArrow"></div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="build/out.js"></script>
+</body>
+</html>

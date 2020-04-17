@@ -1,0 +1,65 @@
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .display-7,
+.display-8, .display-9, .display-10, .display-11, .display-12, .display-13, .display-14,
+.display-15, .display-16, .display-17, .display-18 {
+  font-size: initial;
+  font-weight: initial;
+  line-height: initial;
+}
+
+form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+form .group-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+form .operator-bar {
+  align-self: flex-end;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+[class*="display-number__value"] {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+[class*="display-number__value"].active {
+  display: flex;
+}
+
+
+.result-bit {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid lightgrey;
+}
+
+.result-bit [class*="display-number__value"] {
+  cursor: initial;
+  background-color: dodgerblue;
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+.group-number:nth-child(9) .display-number {
+  display: none;
+}

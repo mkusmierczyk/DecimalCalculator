@@ -1,0 +1,30 @@
+{
+  "name": "FE_ES6_REACT",
+  "version": "1.0.0",
+  "description": "<img alt=\"Logo\" src=\"https://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot -d",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodersLab-core/FE_ES6_REACT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodersLab-core/FE_ES6_REACT/issues"
+  },
+  "homepage": "https://github.com/CodersLab-core/FE_ES6_REACT#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
