@@ -12,17 +12,12 @@ App.prototype.generateLinks = function () {
 App.prototype.insertLinks = function () {
     let ulLinks = document.querySelector('#task-4-menu');
 
-  this.links.forEach((element, id) => {
+    this.links.forEach((element, id) => {
         const liLinks = document.createElement("li");
         liLinks.innerText = element;
         ulLinks.appendChild(liLinks)
     })
-
 };
-
-
-
-
 
 
 const app = new App();
@@ -32,11 +27,3 @@ app.insertLinks();
 console.log(app.links);
 
 
-// const generateLinks = function (elements) {
-//   const links = [];
-//   elements.forEach(function (elem) {
-//     links.push(elem.innerText);
-//   });
-//   return links;
-// };
-// console.log(generateLinks(this.websites));
