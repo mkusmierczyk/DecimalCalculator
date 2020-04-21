@@ -9,7 +9,7 @@ class Insect {
     }
 }
 
-class Centipede extends Insect{
+class Centipede extends Insect{ //Czy musi być w konstruktore i super
     constructor(bugName, legs, bugSpecies) {
         super(bugName,legs, bugSpecies);
     }
