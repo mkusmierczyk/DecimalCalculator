@@ -1,12 +1,14 @@
 const cities = ["Kraków", "Olsztyn", "Szczecin", "Ostrów Wielkopolski"];
-let array = [];
-   let arrays = () =>{ cities.forEach( elem => {
 
-       array.push(elem.length);
-       return array
+let arrays = () => {
+    let array = [];
+    cities.forEach(elem => {
+        array.push(elem.length);
+        return array
     });
     console.log(array)
-   };
+};
 
-    arrays(cities);
+let arr = element => element.length;
+const result = cities.map(arr); console.log(result);
 

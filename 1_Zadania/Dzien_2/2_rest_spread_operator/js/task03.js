@@ -5,4 +5,10 @@ const state = {
   isUserLogged: false
 };
 
+const stateCopy = {...state};
+
+stateCopy.availableYears = stateCopy.availableYears.filter(years=>years<=1999); // pełny zapis stateCopy.availableYears.filter(function (years) {return years >= 1999});
+stateCopy.isUserLogged = "true";
+
+console.log(stateCopy);
 
