@@ -1,3 +1,4 @@
+import {Square} from "./Square";
 
 let square = new Square(2);
 square.sayName();
