@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+let numberA = parseFloat(prompt("Podaj Liczbę A"));
+let numberB = parseFloat(prompt("Podaj Liczbę B"));
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <div>Wynik dodawania {numberA} + {numberB} = {numberA+numberB}</div>,
   document.getElementById("app")
 );
