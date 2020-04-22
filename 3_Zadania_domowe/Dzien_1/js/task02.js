@@ -3,18 +3,19 @@ class Weather {
         this.tempArr = temp;
     }
 
-    getAvgTemperature() {
-         this.tempArr.reduce(function(accumulator, currentValue, currentIndex, array) {
-             let acc = 0;
-             acc= (accumulator+currentValue);
-             return console.log(acc)
-         })
+   getAvgTemperature() {
+        let sum =  this.tempArr.reduce((a,b)=> a+b);
+        return sum/this.tempArr.length
+    }
 
-    };
 }
 
-let monday = new Weather([-2, 5, 3]);
+let monday = new Weather([-2, -2, -1,5,5]);
 monday.getAvgTemperature();
+
+let avg = document.querySelector(".avg");
+
+avg.innerText = monday.getAvgTemperature();
 
 
 // let getAvgTemperature = (tempArr)=> {
