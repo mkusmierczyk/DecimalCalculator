@@ -18,11 +18,3 @@ let avg = document.querySelector(".avg");
 avg.innerText = monday.getAvgTemperature();
 
 
-// let getAvgTemperature = (tempArr)=> {
-//     tempArr.reduce((temp1, temp2) => {
-//         return console.log((temp1 + temp2) / tempArr.length)
-//     });
-//
-// };
-// getAvgTemperature([5,6,5]);
-//
