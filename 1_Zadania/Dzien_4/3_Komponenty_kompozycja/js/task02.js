@@ -24,7 +24,6 @@ function ChatMessages() {
         <ul>
             <li>Wpis z chatu 1</li>
             <li>Wpis z chatu 2</li>
-
             <ChatMessage/>
         </ul>
     </div>)

@@ -1,6 +1,6 @@
 const path = require("path");
-const entryPath = "1_Zadania/Dzien_4/3_Komponenty_kompozycja";
-const entryFile = "task02.js";
+const entryPath = "1_Zadania/Dzien_4/4_Komponenty_podsumowanie";
+const entryFile = "task01.js";
 
 module.exports = {
     entry: `./${entryPath}/js/${entryFile}`,
@@ -12,7 +12,7 @@ module.exports = {
         contentBase: path.join(__dirname, `${entryPath}`),
         publicPath: "/build/",
         compress: true,
-        port: 3007
+        port: 3002
     },
     module: {
         rules: [

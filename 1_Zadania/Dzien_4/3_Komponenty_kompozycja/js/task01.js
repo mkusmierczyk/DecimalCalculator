@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
-import {ShopItemHeader} from "./task0b";
+import products from "js/data/products.js";
 
 
 function ShopList(props) {
