@@ -30,7 +30,6 @@ function StreetNumber({street, house_number}) {
     )
 }
 
-
 function App() {
     const sampleData = {
         name: 'Jan',

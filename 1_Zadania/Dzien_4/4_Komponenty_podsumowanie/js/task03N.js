@@ -1,47 +1,59 @@
 class Item {
-    constructor(name, price, inStock, quantityM) {
+    constructor(name, price, inStock, quantity) {
         this.name = name;
         this.price = price;
-        this.instock = inStock;
-        this.quantityM = quantityM
+        this.inStock = inStock;
+        this.quantity = quantity;
     }
 
-    isInStock() {
-        if (this.instock === 0) {
-            return console.log("Brak w magazynie")
-        } else console.log("Przedmiot dostępny")
+    isInStock(inStock) {
+        if (this.quantity <= 0) {
+            this.inStock = false;
+        }
+        if (this.inStock === true) {
+            return "Przedmiot dostępny";
+        } else {
+            return "Brak w magazynie";
+        }
     }
-
 
     order(quantity) {
-
-        if (quantity > this.quantityM) {
+        if (quantity > this.quantity) {
             return false;
-        } else this.quantityM = this.quantityM - quantity
+        }
 
+        if (quantity <= this.quantity) {
+            this.quantity -= quantity;
+            return quantity * this.price;
+        }
     }
 }
 
 class TShirt extends Item {
-    constructor(name, price, inStock, quantityM, materials, sizes) {
-        super(name, price, inStock, quantityM);
-        this.materials = []
-        this.sizes = ["S", "M", "L", "Xl"]
+    constructor(name, price, inStock, quantity, materials, sizes) {
+        super(name, price, inStock, quantity);
+        this.materials = [];
+        this.sizes = ["S", "M", "L", "XL"]
     }
 
-    addMaterial(materials) {
-        this.materials = [...materials]
+    addMaterial(material) {
+        let addMaterial = material
+        this.materials.push(addMaterial)
 
+        return this.materials;
     }
 
     removeSize(size) {
-        this.sizes = this.sizes.filter(size => this.sizes !== size);
-
-    }
+        function remove(value) {
+            return value !== size;
+        }
+      this.sizes =  this.sizes.filter(remove)
+        return this.sizes
+        }
 
 }
 
-const tshirt = new TShirt ("tshirt", 299.99, true, 40);
+const tshirt = new TShirt("tshirt", 299.99, true, 40);
 
 console.log(tshirt.isInStock()); // Produkt dostępny
 console.log(tshirt.order(30)); // 8999.7
