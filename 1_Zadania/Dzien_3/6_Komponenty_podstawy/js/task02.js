@@ -7,7 +7,7 @@ class Menu extends Component {
             <ul>
                 <li> <a href='/'> Strona główna </a> </li>
                 <li> <a href='/blog'>Blog </a> </li>
-                <li> <a href='/cennik'>Cennik </a> </li>
+                <li> <a href='/cennik'>Censadsanik </a> </li>
                 <li> <a href='/konakt'>Kontakt </a> </li>
             </ul>
         )

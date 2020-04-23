@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
-class Header extends Component {
-  render() {
-    const {logo, searchPlaceholder} = this.props;
+const Header =props => {
+
+    const {logo, searchPlaceholder} = props;
 
     return (
       <header>
@@ -14,7 +14,7 @@ class Header extends Component {
         </form>
       </header>
     );
-  }
+
 }
 
 class App extends Component {
