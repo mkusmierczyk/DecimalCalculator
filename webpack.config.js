@@ -1,6 +1,6 @@
 const path = require("path");
 const entryPath = "1_Zadania/Dzien_4/4_Komponenty_podsumowanie";
-const entryFile = "task01.js";
+const entryFile = "task05N.js";
 
 module.exports = {
     entry: `./${entryPath}/js/${entryFile}`,
