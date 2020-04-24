@@ -16,7 +16,7 @@ class Calculator {
   *  @return {array}
   */
   add(numberX, numberY) {
-    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej. ");
+    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej.ADD ");
     return [0, 0, 0, 0, 0, 0, 0, 0];
   }
 
@@ -24,13 +24,13 @@ class Calculator {
   *  @param root Parent element
   */
   changeNumber(root) {
-    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej. ");
+    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej.Change ");
   }
 
   /* Abstract method changing Result
   */
   updateResult() {
-    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej. ");
+    console.error("Powinieneś zaimplementować tą metodę w klasie dziedziczącej.Update ");
   }
 
   /* Get the name of calculator selector

@@ -6,7 +6,6 @@ function Chat(props) {
         <section className="chat">
             <ChatHeader/>
             <ChatMessages/>
-
             <NewChatMessage/>
 
         </section>

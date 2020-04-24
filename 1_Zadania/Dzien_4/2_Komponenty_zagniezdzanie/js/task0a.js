@@ -10,8 +10,6 @@ function CurrencyConverter(props) {
         </div>
     )
 }
-
-
 function App(props) {
     return (
         <div>
