@@ -23,7 +23,22 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.7.6",
     "babel-loader": "^8.1.0",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.1",
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "ie 6-8",
+      "Firefox > 20",
+      "since 2015"
+    ],
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.14.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
