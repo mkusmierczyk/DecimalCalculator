@@ -11,13 +11,23 @@ class DecCalculator extends Calculator {
         let activeElement = root.querySelector(".active");
 
         activeElement.setAttribute('contenteditable', true);
+        activeElement.addEventListener('input', function (event) {
+            if (event.data >= "0" && event.data <= "9") {
+                event.target.innerText = event.data
+            } else {
+                event.target.innerText = 0;
+            }
+
+        });
         [...activeElement.parentElement.children].forEach(el => {
             if (el !== activeElement) {
                 el.classList.add("active");
 
             }
+
         })
     };
+
 
     add(numberX, numberY) {
         let result = [0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -34,31 +44,31 @@ class DecCalculator extends Calculator {
     }
 
 
-initEvents()
-{
-    super.initEvents();
-    let plus = this.$calculatorDOMElement.querySelector('.operator-bar')
-    console.log(plus);
-    plus.addEventListener('click',  (event)=> {
-        this.checkNumber();
-        this.updateResult();
-    })
+    initEvents() {
+        super.initEvents();
+        let plus = this.$calculatorDOMElement.querySelector('.operator-bar')
+        console.log(plus);
+        plus.addEventListener('click', (event) => {
+            this.checkNumber();
+            this.updateResult();
+        })
 
-}
+    }
+
     updateResult() {
         let root = this.$calculatorDOMElement;
         let $resultNumber = root.querySelectorAll(".result-bit");
 
         for (let i = this.resultNumberArray.length - 1, j = 0; i >= 0; i--, j++) {
-            ($resultNumber[j].querySelector(".active").innerText =this.resultNumberArray[i]);
+            ($resultNumber[j].querySelector(".active").innerText = this.resultNumberArray[i]);
 
         }
 
 
     }
 
-/* Method changing number
-*/
+    /* Method changing number
+    */
 }
 
 
