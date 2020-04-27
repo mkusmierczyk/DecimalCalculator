@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const path = require("path");
-const entryPath = "1_Zadania/Dzien_5_Warsztat";
+const entryPath = "DecimalCalculator";
 const entryFile = "app.js";
 
 module.exports = {

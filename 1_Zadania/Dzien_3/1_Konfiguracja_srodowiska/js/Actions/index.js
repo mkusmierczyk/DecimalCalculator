@@ -1,2 +1,0 @@
-export const MOVIES_FETCH = "MOVIES_FETCH";
-export const MOVIES_FETCH_ERROR = "MOVIES_FETCH_ERROR";
